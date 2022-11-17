@@ -6,7 +6,12 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 
 		/*
+		 PRUEBAS DEL EJERCICIO:
 		 
+		 INPUT:  OUTPUT:
+		 INPUT:  OUTPUT:
+		 INPUT:  OUTPUT:
+		 INPUT:  OUTPUT:
 		 */
 
 		int hor; // La variable guarda los segundos
@@ -31,9 +36,9 @@ public class Ejercicio1 {
 		System.out.println("Introduzca los segundos que quiera aumentar"); // Pedimos
 		aumentar = sc.nextInt(); // Leemos
 
-		if (seg > 60 || min > 60 || hor > 24 || seg < 0 || min < 0 || hor < 0) {
-			System.out.println("Los valores introducidos son incorrectos");
-		} else {
+		if (seg > 60 || min > 60 || hor > 24 || seg < 0 || min < 0 || hor < 0) { //Creamos un if para indicar los rangos inválidos
+			System.out.println("Los valores introducidos son incorrectos"); //Si es inválido mostramos un mensaje de error
+		} else { //Si no es incorrecto...
 
 			seg += aumentar; // Hacemos que se sumen los segundos a los que introduzca el usuario
 
@@ -52,7 +57,7 @@ public class Ejercicio1 {
 
 				if (hor > 23) { // Hacer solo mientras hor sea mayor o igual a 24
 
-					hor -= 24;
+					hor -= 24; //Si hay más de 23h, se restarán 24
 				}
 
 			}
